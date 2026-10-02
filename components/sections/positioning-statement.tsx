@@ -1,19 +1,13 @@
-import Image from "next/image";
 import { Eyebrow } from "@/components/ui/section-heading";
 import { Container } from "@/components/ui/container";
+import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 
 export function PositioningStatement() {
   return (
     <section className="bg-brand-off-white">
       <Container className="grid grid-cols-1 items-center gap-12 py-20 sm:py-24 lg:grid-cols-2 lg:py-28">
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg border border-brand-light-grey">
-          <Image
-            src="/our-approach.jpg"
-            alt="The Ares team carrying out electrical, air conditioning and refrigeration work on a commercial fit-out"
-            fill
-            sizes="(min-width: 1024px) 40vw, 90vw"
-            className="object-cover grayscale"
-          />
+          <ImagePlaceholder />
         </div>
         <div>
           <Eyebrow>Our Approach</Eyebrow>

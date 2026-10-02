@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Home, Building2 } from "lucide-react";
 import { PageHero } from "@/components/sections/page-hero";
 import { Section } from "@/components/ui/section";
@@ -6,6 +5,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { CapabilityList } from "@/components/sections/capability-list";
 import { AccreditationBlock } from "@/components/sections/accreditation-block";
 import { ContactCTA } from "@/components/sections/contact-cta";
+import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 import type { ServiceSummary } from "@/lib/constants";
 
 export function ServiceDetail({
@@ -25,7 +25,6 @@ export function ServiceDetail({
         eyebrow={`Services / ${service.name}`}
         title={heroTitle}
         description={heroDescription}
-        image={service.image}
         crumbs={[{ label: "Services", href: "/services" }, { label: service.name }]}
       />
 
@@ -41,13 +40,7 @@ export function ServiceDetail({
             <CapabilityList items={service.capabilities} />
           </div>
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg border border-brand-light-grey">
-            <Image
-              src={service.image}
-              alt={`${service.name} project detail`}
-              fill
-              sizes="(min-width: 1024px) 40vw, 90vw"
-              className="object-cover grayscale"
-            />
+            <ImagePlaceholder />
           </div>
         </div>
       </Section>

@@ -4,7 +4,6 @@ import { Section } from "@/components/ui/section";
 import { QuoteForm } from "@/components/forms/quote-form";
 import { ContactDetails } from "@/components/sections/contact-details";
 import { buildMetadata } from "@/lib/metadata";
-import { images } from "@/lib/images";
 
 export const metadata: Metadata = buildMetadata({
   title: "Contact & Request a Quote",
@@ -20,7 +19,6 @@ export default function ContactPage() {
         eyebrow="Get in Touch"
         title="Request a quote."
         description="Tell us about your electrical, air conditioning or refrigeration project and we'll be in touch to discuss the work."
-        image={images.ctaDark}
         crumbs={[{ label: "Contact" }]}
       />
       <Section tone="white">

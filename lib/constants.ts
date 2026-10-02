@@ -28,6 +28,11 @@ export const business = {
 
 export const fullAddress = `${business.address.line1}, ${business.address.line2}, ${business.address.town}, ${business.address.country}`;
 
+// When true, `proxy.ts` routes every visitor to the live site to the
+// maintenance page (see app/maintenance/page.tsx) regardless of which URL
+// they requested. Flip back to false (and push) to bring the site back.
+export const maintenanceMode = true;
+
 export type NavItem = {
   label: string;
   href: string;

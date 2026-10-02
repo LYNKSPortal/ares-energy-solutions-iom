@@ -3,6 +3,7 @@ import { Mail, Phone } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Eyebrow } from "@/components/ui/section-heading";
 import { Logo } from "@/components/layout/logo";
+import { MeteorField } from "@/components/sections/meteor-field";
 import { business } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -17,8 +18,9 @@ export const metadata: Metadata = {
 
 export default function MaintenancePage() {
   return (
-    <section className="flex min-h-screen items-center bg-brand-black text-brand-off-white">
-      <Container className="flex flex-col items-center gap-10 py-24 text-center">
+    <section className="relative flex min-h-screen items-center overflow-hidden bg-brand-black text-brand-off-white">
+      <MeteorField />
+      <Container className="relative flex flex-col items-center gap-10 py-24 text-center">
         <Logo tone="light" />
 
         <div className="flex flex-col items-center gap-5">

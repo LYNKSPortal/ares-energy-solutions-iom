@@ -119,7 +119,7 @@ export const services: ServiceSummary[] = [
       "Refurbishments",
       "Fit-outs",
     ],
-    image: "/service-electrical.jpg",
+    image: "/projects/electrical-ares-branding.jpg",
   },
   {
     slug: "air-conditioning",
@@ -142,7 +142,7 @@ export const services: ServiceSummary[] = [
     ],
     domestic: ["Installation", "Servicing", "Maintenance", "Repairs"],
     commercial: ["Installation", "Servicing", "Maintenance", "Repairs"],
-    image: "/service-air-conditioning.jpg",
+    image: "/projects/ac-cassette-clean.jpg",
   },
   {
     slug: "refrigeration",
@@ -163,7 +163,7 @@ export const services: ServiceSummary[] = [
     ],
     domestic: ["Refrigeration services"],
     commercial: ["Refrigeration services", "Ongoing maintenance"],
-    image: "/service-commercial-refrigerator.jpg",
+    image: "/projects/refrigeration-cold-room.jpg",
   },
 ];
 

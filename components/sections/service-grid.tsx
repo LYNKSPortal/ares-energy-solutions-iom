@@ -1,8 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 import { services } from "@/lib/constants";
 
 export function ServiceGrid() {
@@ -23,7 +23,13 @@ export function ServiceGrid() {
               className="group relative flex flex-col justify-between bg-brand-white p-8 transition-colors duration-200 hover:bg-brand-off-white"
             >
               <div className="relative mb-8 aspect-[4/3] w-full overflow-hidden rounded-md border border-brand-light-grey">
-                <ImagePlaceholder className="transition-transform duration-500 ease-out group-hover:scale-105" />
+                <Image
+                  src={service.image}
+                  alt=""
+                  fill
+                  sizes="(min-width: 768px) 33vw, 90vw"
+                  className="object-cover grayscale transition-transform duration-500 ease-out group-hover:scale-105"
+                />
               </div>
               <div className="flex items-start justify-between">
                 <span className="text-xs font-semibold tracking-[0.2em] text-brand-mid-grey">

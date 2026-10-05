@@ -19,6 +19,7 @@ export default function ContactPage() {
         eyebrow="Get in Touch"
         title="Request a quote."
         description="Tell us about your electrical, air conditioning or refrigeration project and we'll be in touch to discuss the work."
+        image="/projects/refrigeration-cold-room.jpg"
         crumbs={[{ label: "Contact" }]}
       />
       <Section tone="white">

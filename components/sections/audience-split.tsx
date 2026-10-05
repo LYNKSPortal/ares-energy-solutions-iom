@@ -1,7 +1,12 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { audiences } from "@/lib/constants";
-import { ImagePlaceholder } from "@/components/ui/image-placeholder";
+
+const audienceImages: Record<(typeof audiences)[number]["key"], string> = {
+  domestic: "/projects/domestic-water-heater.jpg",
+  commercial: "/projects/commercial-lighting-install.jpg",
+};
 
 export function AudienceSplit() {
   return (
@@ -13,7 +18,13 @@ export function AudienceSplit() {
             href={audience.href}
             className="group relative flex min-h-[420px] items-end overflow-hidden"
           >
-            <ImagePlaceholder className="transition-transform duration-700 ease-out group-hover:scale-105" />
+            <Image
+              src={audienceImages[audience.key]}
+              alt=""
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover grayscale transition-transform duration-700 ease-out group-hover:scale-105"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-brand-black/40 to-transparent" />
             <div className="relative w-full px-8 py-12 sm:px-12">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand-light-grey">

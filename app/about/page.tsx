@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageHero } from "@/components/sections/page-hero";
 import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { AccreditationBlock } from "@/components/sections/accreditation-block";
 import { Certifications } from "@/components/sections/certifications";
 import { ContactCTA } from "@/components/sections/contact-cta";
-import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildMetadata({
@@ -31,6 +31,7 @@ export default function AboutPage() {
         eyebrow="About Ares"
         title="An Isle of Man-based electrical and climate-control contractor."
         description="Based in Castletown, Ares Energy Solution Limited serves domestic and commercial customers across the Isle of Man."
+        image="/projects/electrical-ares-branding.jpg"
         crumbs={[{ label: "About" }]}
       />
 
@@ -62,7 +63,13 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg border border-brand-light-grey">
-            <ImagePlaceholder />
+            <Image
+              src="/projects/ac-ceiling-diffuser-tech.jpg"
+              alt="Ares technician carrying out an air conditioning ceiling installation"
+              fill
+              sizes="(min-width: 1024px) 40vw, 90vw"
+              className="object-cover grayscale"
+            />
           </div>
         </div>
       </Section>

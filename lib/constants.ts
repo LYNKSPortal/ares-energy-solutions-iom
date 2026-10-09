@@ -173,6 +173,26 @@ export const accreditation = {
   categories: ["Electrical Installation", "Air Conditioning"],
 };
 
+export const leadership = {
+  name: "Leon Dawson",
+  role: "Director",
+  bio: [
+    "Leon Dawson is the Director, bringing over 18 years of experience in the HVAC industry. With extensive expertise in the installation, servicing and maintenance of heating, ventilation, air conditioning and refrigeration systems, Leon has successfully managed several large-scale installation projects across the Isle of Man.",
+    "He holds NVQ Level 3 qualifications in HVAC servicing and complex refrigeration installation, alongside specialist certifications in refrigerant handling, hydrocarbon refrigerants, pipework, brazing and complex CO\u2082 systems.",
+    "Leon is also highly experienced in the installation and servicing of advanced air conditioning systems from leading manufacturers, including Daikin and Mitsubishi. His technical knowledge, hands-on experience and commitment to high standards ensure that every project is delivered professionally, efficiently and to the highest quality.",
+  ],
+  qualifications: [
+    "NVQ Level 3 — HVAC Servicing",
+    "NVQ Level 3 — Complex Refrigeration Installation",
+    "Refrigerant Handling",
+    "Hydrocarbon Refrigerants",
+    "Pipework & Brazing",
+    "Complex CO\u2082 Systems",
+    "Daikin Systems",
+    "Mitsubishi Systems",
+  ],
+};
+
 export type Certification = {
   name: string;
   detail?: string;

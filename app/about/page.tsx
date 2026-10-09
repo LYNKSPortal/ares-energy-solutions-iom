@@ -5,7 +5,9 @@ import { Section } from "@/components/ui/section";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { AccreditationBlock } from "@/components/sections/accreditation-block";
 import { Certifications } from "@/components/sections/certifications";
+import { CapabilityList } from "@/components/sections/capability-list";
 import { ContactCTA } from "@/components/sections/contact-cta";
+import { leadership } from "@/lib/constants";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = buildMetadata({
@@ -75,6 +77,40 @@ export default function AboutPage() {
       </Section>
 
       <Section tone="light">
+        <SectionHeading eyebrow="Leadership" title="Led by an experienced, qualified engineer." />
+        <div className="mt-10 grid grid-cols-1 gap-10 lg:grid-cols-[0.32fr_1fr] lg:items-start">
+          <div className="relative aspect-square w-full max-w-xs overflow-hidden rounded-lg border border-brand-light-grey">
+            <Image
+              src="/team/leon-dawson.jpg"
+              alt={`${leadership.name}, ${leadership.role} of Ares Energy Solution Limited`}
+              fill
+              sizes="(min-width: 1024px) 20vw, 60vw"
+              className="object-cover grayscale"
+            />
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-brand-black">{leadership.name}</h3>
+            <p className="mt-1 text-sm font-medium uppercase tracking-[0.12em] text-brand-mid-grey">
+              {leadership.role}
+            </p>
+            <div className="mt-6 flex flex-col gap-5 text-base leading-relaxed text-brand-dark-grey">
+              {leadership.bio.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="mt-12 rounded-lg border border-brand-light-grey bg-brand-white p-8">
+          <h4 className="text-sm font-semibold uppercase tracking-[0.12em] text-brand-mid-grey">
+            Qualifications & Certifications
+          </h4>
+          <div className="mt-6">
+            <CapabilityList items={leadership.qualifications} />
+          </div>
+        </div>
+      </Section>
+
+      <Section tone="white">
         <SectionHeading
           eyebrow="What We Cover"
           title="Working across a wide range of property types and requirements."

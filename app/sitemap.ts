@@ -7,6 +7,7 @@ const routes = [
   "/services/electrical",
   "/services/air-conditioning",
   "/services/refrigeration",
+  "/gallery",
   "/about",
   "/contact",
   "/privacy",

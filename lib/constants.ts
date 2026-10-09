@@ -62,6 +62,7 @@ export const primaryNav: NavItem[] = [
       },
     ],
   },
+  { label: "Gallery", href: "/gallery" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -203,6 +204,45 @@ export const certificationGroups: CertificationGroup[] = [
       { name: "Aspen Pumps", detail: "Approved" },
     ],
   },
+];
+
+export type GalleryCategory = "Electrical" | "Air Conditioning" | "Refrigeration" | "Domestic";
+
+export type GalleryImage = {
+  src: string;
+  alt: string;
+  category: GalleryCategory;
+};
+
+export const galleryImages: GalleryImage[] = [
+  { src: "/projects/electrical-ares-branding.jpg", alt: "Ares technician working at a distribution board", category: "Electrical" },
+  { src: "/gallery/electrical-ares-close.jpg", alt: "Ares branding on site during an electrical installation", category: "Electrical" },
+  { src: "/projects/electrical-db-labelled.jpg", alt: "Clearly labelled commercial distribution board", category: "Electrical" },
+  { src: "/projects/electrical-db-detail.jpg", alt: "Distribution board terminal detail", category: "Electrical" },
+  { src: "/gallery/electrical-db-schneider.jpg", alt: "Commercial distribution board installation", category: "Electrical" },
+  { src: "/projects/electrical-cable-tray.jpg", alt: "Commercial electrical containment and cable tray installation", category: "Electrical" },
+  { src: "/gallery/electrical-tray-detail.jpg", alt: "Cable containment detail on a commercial site", category: "Electrical" },
+  { src: "/gallery/electrical-panel-void.jpg", alt: "Electrical containment above a suspended ceiling", category: "Electrical" },
+  { src: "/gallery/electrical-testing-megger.jpg", alt: "Electrical testing and inspection in progress", category: "Electrical" },
+  { src: "/gallery/electrical-storefront-emergency.jpg", alt: "Emergency lighting installation at a commercial entrance", category: "Electrical" },
+  { src: "/gallery/electrical-checkout-install.jpg", alt: "Electrical installation work for commercial checkout equipment", category: "Electrical" },
+  { src: "/gallery/electrical-security-gate.jpg", alt: "Electrical installation for commercial security equipment", category: "Electrical" },
+  { src: "/projects/ac-cassette-clean.jpg", alt: "Ceiling-mounted air conditioning cassette unit", category: "Air Conditioning" },
+  { src: "/gallery/ac-cassette-fitout.jpg", alt: "Air conditioning cassette unit installed during a fit-out", category: "Air Conditioning" },
+  { src: "/projects/ac-ceiling-diffuser-tech.jpg", alt: "Technician carrying out a ceiling air conditioning installation", category: "Air Conditioning" },
+  { src: "/projects/ac-condenser-mitsubishi.jpg", alt: "Commercial air conditioning condenser unit", category: "Air Conditioning" },
+  { src: "/projects/ac-pipework-rooftop.jpg", alt: "Insulated refrigerant pipework on a rooftop plant installation", category: "Air Conditioning" },
+  { src: "/gallery/ac-rooftop-unit.jpg", alt: "Rooftop air conditioning plant and pipework", category: "Air Conditioning" },
+  { src: "/gallery/ac-rooftop-tray-pipework.jpg", alt: "Rooftop cable containment and refrigerant pipework", category: "Air Conditioning" },
+  { src: "/gallery/ac-rooftop-wide.jpg", alt: "Wide view of rooftop air conditioning pipework installation", category: "Air Conditioning" },
+  { src: "/projects/refrigeration-cold-room.jpg", alt: "Completed walk-in cold room installation", category: "Refrigeration" },
+  { src: "/projects/refrigeration-controller-copeland.jpg", alt: "Refrigeration control panel detail", category: "Refrigeration" },
+  { src: "/gallery/refrigeration-controller-freddox.jpg", alt: "Refrigeration controller and isolator detail", category: "Refrigeration" },
+  { src: "/gallery/refrigeration-coldroom-panel.jpg", alt: "Commercial cold room control panel installation", category: "Refrigeration" },
+  { src: "/gallery/refrigeration-coldroom-panel-2.jpg", alt: "Commercial refrigeration plant installation", category: "Refrigeration" },
+  { src: "/gallery/refrigeration-chilled-display.jpg", alt: "Commercial chilled display refrigeration", category: "Refrigeration" },
+  { src: "/projects/domestic-water-heater.jpg", alt: "Domestic water heater and pipework installation", category: "Domestic" },
+  { src: "/gallery/domestic-pipework.jpg", alt: "Pipework installation detail", category: "Domestic" },
 ];
 
 export const audiences = [

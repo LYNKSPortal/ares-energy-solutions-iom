@@ -266,6 +266,12 @@ export const testimonials = [
     author: "Pete Lennon",
     role: "Site Manager, Lennon Building Solutions",
   },
+  {
+    quote:
+      "We've worked with the team on the M&S Isle of Man Food Hall and Clothing & Home refurbishment project and found them to be a great company to work with. They provided reliable labour resources throughout and were always proactive in helping overcome challenges on site. The quality of their electrical, plumbing and AC installations was excellent, and their electrical testing, inspection and reporting was carried out professionally and to a high standard. Communication was good throughout, and they always approached the project with a positive, can-do attitude. Reliable, knowledgeable and easy to work with — I'd be happy to recommend them for future commercial refurbishment and fit-out projects.",
+    author: "John Thacker",
+    role: "MEP Project Manager",
+  },
 ];
 
 export const processSteps = [

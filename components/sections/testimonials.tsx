@@ -9,7 +9,7 @@ export function Testimonials() {
       <div className="flex flex-col items-center text-center">
         <Eyebrow tone="light">Client Feedback</Eyebrow>
       </div>
-      <div className="mt-14 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-x-16">
+      <div className="mt-14 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-12">
         {testimonials.map((testimonial) => (
           <figure
             key={testimonial.author}
